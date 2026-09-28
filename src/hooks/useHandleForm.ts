@@ -4,8 +4,6 @@ const useHandleForm = () => {
   const nameInput = useRef<HTMLInputElement>(null);
   const ageInput = useRef<HTMLInputElement>(null);
 
-  console.log(nameInput.current);
-
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
