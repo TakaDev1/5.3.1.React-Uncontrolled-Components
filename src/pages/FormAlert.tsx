@@ -6,17 +6,22 @@ const FormAlert = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="text-white flex flex-col gap-10">
         <label htmlFor="name">
           名前:
-          <input type="text" ref={nameInput} />
+          <input type="text" ref={nameInput} className="border rounded-lg ml-2" />
         </label>
         <label htmlFor="age">
           年齢:
-          <input type="number" ref={ageInput} />
+          <input type="number" ref={ageInput} className="border rounded-lg ml-2" />
         </label>
 
-        <button type="submit">送信</button>
+        <button
+          type="submit"
+          className="rounded-full bg-gray-500 py-1 w-1/4 mx-auto hover:opacity-80 cursor-pointer transition"
+        >
+          送信
+        </button>
       </form>
     </>
   );
